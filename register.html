@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - Alumnex</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style-register.css" />
+</head>
+<body>
+    <div class="overlay">
+  <!-- Simple Header -->
+  <header class="navbar">
+  <div class="navbar-container">
+    <div class="logo">🎓 Alumnex</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#">Jobs</a>
+      <a href="#">Events</a>
+      <a href="register.html" class="login-btn">Login / Signup</a>
+    </nav>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </div>
+</header>
+
+
+  <!-- Registration Form -->
+  <main class="form-section">
+    <div class="form-box">
+      <h1>Join the Alumni Network</h1>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="password" placeholder="Create Password" required />
+        <input type="password" placeholder="Confirm Password" required />
+        <button type="submit">Register</button>
+      </form>
+      <p>Already a member? <a href="#">Login</a></p>
+    </div>
+    </main></div>
+  </main>
+  <script>
+  // Toggle nav on mobile
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Alumni - Alumnex</title>
+  <link rel="stylesheet" href="style-search.css" />
+  <script defer src="script.js"></script>
+  <script defer src="search.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar slide-down">
+    <div class="navbar-container">
+      <div class="logo">🎓 Alumnex</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Jobs</a>
+        <a href="#">Events</a>
+        <a href="register.html" class="login-btn">Login / Signup</a>
+      </nav>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Protected Alumni Search Section -->
+  <main class="fade-in search-page">
+    <h1 class="section-title">Search Alumni</h1>
+    <p class="section-subtitle">Find fellow graduates by name, year, or profession.</p>
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search alumni by name..." />
+      <button class="btn dark" onclick="searchAlumni()">Search</button>
+    </div>
+
+    <div id="results" class="alumni-results"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer fade-in">
+    <div class="footer-content">
+      <div class="left">
+        <h2>VASSAR</h2>
+        <p>📍 124 Raymond Avenue, Poughkeepsie, NY 12604</p>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Academics</a>
+          <a href="#">Admission</a>
+          <a href="#">Campus Life</a>
+          <a href="#">Institute</a>
+        </div>
+        <div class="socials">
+          <a href="#">📸</a>
+          <a href="#">🎥</a>
+          <a href="#">💼</a>
+          <a href="#">🎵</a>
+        </div>
+      </div>
+      <div class="right">
+        <img src="campaign.jpg" alt="Campaign">
+        <p><a href="#">Learn more about our comprehensive campaign →</a></p>
+      </div>
+    </div>
+    <div class="bottom-footer">
+      <p>© 2025 Vassar College</p>
+      <p>
+        <a href="#">Security Report</a> |
+        <a href="#">HEOA</a> |
+        <a href="#">Title IX</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
