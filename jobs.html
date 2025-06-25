@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Board - Alumnex</title>
+  <link rel="stylesheet" href="style-jobs.css" />
+  <script src="job.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar slide-down">
+    <div class="navbar-container">
+      <div class="logo">🎓 Alumnex</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="events.html">Events</a>
+        <a href="register.html" class="login-btn">Login / Signup</a>
+      </nav>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+  </header>
+
+  <main class="job-board fade-in">
+    <h1>Alumni Job Opportunities</h1>
+    <p class="subtitle">Share and discover opportunities from the community</p>
+
+    <!-- Post a Job Form -->
+    <div id="jobFormSection" class="job-form">
+      <h2>Post a Job</h2>
+      <form id="jobForm">
+        <input type="text" id="title" placeholder="Job Title" required />
+        <input type="text" id="company" placeholder="Company Name" required />
+        <input type="text" id="location" placeholder="Location" required />
+        <input type="url" id="link" placeholder="Application Link (URL)" required />
+        <textarea id="description" placeholder="Short Job Description" required></textarea>
+        <button type="submit" class="btn dark">Post Job</button>
+      </form>
+    </div>
+
+    <!-- Job Listings -->
+    <div class="job-listings" id="jobListings"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer fade-in">
+    <div class="footer-content">
+      <div class="left">
+        <h2>VASSAR</h2>
+        <p>📍 124 Raymond Avenue, Poughkeepsie, NY 12604</p>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Academics</a>
+          <a href="#">Admission</a>
+          <a href="#">Campus Life</a>
+          <a href="#">Institute</a>
+        </div>
+        <div class="socials">
+          <a href="#">📸</a>
+          <a href="#">🎥</a>
+          <a href="#">💼</a>
+          <a href="#">🎵</a>
+        </div>
+      </div>
+      <div class="right">
+        <img src="campaign.jpg" alt="Campaign" />
+        <p><a href="#">Learn more about our comprehensive campaign →</a></p>
+      </div>
+    </div>
+    <div class="bottom-footer">
+      <p>© 2025 Vassar College</p>
+      <p><a href="#">Security Report</a> | <a href="#">HEOA</a> | <a href="#">Title IX</a></p>
+    </div>
+  </footer>
+</body>
+</html>

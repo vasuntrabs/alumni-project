@@ -1,0 +1,301 @@
+:root {
+  --primary: #000000;
+  --accent: #FFA500;
+  --pink: #FF69B4;
+  --green: #28a745;
+  --yellow: #FFD700;
+  --blue: #007BFF;
+  --white: #FFFFFF;
+  --grey: #6c757d;
+  --light-grey: #f8f9fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light-grey);
+  color: var(--primary);
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.navbar {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1.2rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--white);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.login-btn {
+  background-color: var(--accent);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* ===== MAIN SECTION ===== */
+.job-board h1, .job-form h2 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.job-card {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.job-board {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.job-board h1 {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--grey);
+  margin-bottom: 2.5rem;
+}
+
+/* ===== FORM ===== */
+.job-form {
+  max-width: 600px;
+  margin: 2rem auto 4rem;
+  text-align: left;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.job-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.job-form input,
+.job-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+}
+
+.job-form button {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.job-form button:hover {
+  background-color: var(--accent);
+  color: var(--primary);
+}
+
+/* ===== JOB CARDS ===== */
+.job-listings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.job-card {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+  transform: scale(1.03);
+}
+
+.job-card h3 {
+  font-size: 1.3rem;
+  color: var(--primary);
+}
+
+.job-card p {
+  font-size: 1rem;
+  color: var(--grey);
+  margin: 0.5rem 0;
+}
+
+.job-card .btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  background: var(--light-grey);
+  color: var(--primary);
+  border: 1px solid var(--grey);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.job-card .btn:hover {
+  background: var(--accent);
+  color: var(--primary);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 2.5rem 2rem;
+  font-size: 1.1rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.footer-links a {
+  margin-right: 1rem;
+  color: var(--light-grey);
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.socials a {
+  margin-right: 1rem;
+  color: var(--accent);
+  font-size: 1.3rem;
+}
+
+.right img {
+  max-width: 180px;
+  margin-bottom: 0.6rem;
+}
+
+.bottom-footer {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 1.05rem;
+  border-top: 1px solid var(--grey);
+  padding-top: 1rem;
+}
+
+.bottom-footer a {
+  color: var(--light-grey);
+  margin: 0 0.5rem;
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--primary);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .right img {
+    margin: auto;
+  }
+}
+body::before {
+  content: "";
+  background-image: url('https://s7g10.scene7.com/is/image/eni/hero-lavorare-in-eni-onboarding:horizontal-21-9?&wid=840&hei=408&fit=crop,1');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.25; /* Adjust for readability */
+}
